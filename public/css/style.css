@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+    width: 100%;
+    position: relative
+}
+
+#fitur{
+    color: #00B4CC;
+}
+
+#fitur a{
+    color: #00B4CC;
+    text-decoration: none;
+}
+
+.searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus{
+    color: #000;
+}
+
+.searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+#main{
+    text-align: center;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hasil{
+    width: 60%;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    float : clear;
+}
+
+.logoHasil{
+    width: 30%;
+    float: left;
+}
+
+.searchHasil {
+    width: 65%;
+    margin-top: 18px;
+    float: left;
+    position: relative
+}
+
+#containerHasil{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+    float : left;
+    font-size: 20px;
+    color: #00B4CC;
+}
+
+#berkasHasil{
+    margin-top: 15px;
+}
+
+#berkasHasil table{
+    border-spacing: 0px;
+}
+
+#berkasHasil table tr:hover{
+    background-color: #e5f7f9;
+}
+
+#berkasHasil th {
+    background-color: #00B4CC;
+    color: #fff;
+}
+
+
+#berkasHasil tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#berkasHasil tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#nontab table th{
+    background-color: transparent;
+}
+
+
+#nontab tr:nth-child(even) {
+    background-color: transparent;
+}
+
+#nontab tr:nth-child(odd) {
+    background-color: transparent;
+}
+
+#paging {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	font-size:18px;
+}
+#paging a {
+	padding: 2px 8px 2px 8px;
+    margin:0px 5px 0px 5px;
+	background:#00B4CC;
+	color:#fff;
+	text-decoration: none;
+    
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#paging a:hover {
+	text-decoration:none;
+	background:#ECF0F1;
+	color:#14293D;
+}
+#paging b {
+	color:#00B4CC;
+	font-weight:bold;
+}
+
+#totalPage{
+    float: right;
+    margin-top: 0px;
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media (max-width: 1367px) {
+    #hasil{
+        width: 80%;
+        left: 10%;
+    }
+}

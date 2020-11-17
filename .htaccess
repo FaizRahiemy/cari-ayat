@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^logout?$ logout.php [NC]
+RewriteRule ^([a-zA-Z]*)/?([a-zA-Z]*)?/?([^/.]*)?/?$ index.php?controller=$1&action=$2&id=$3 [NC,L]
